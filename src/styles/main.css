@@ -83,7 +83,7 @@ header nav ul li a:hover::after{
 #home h1{
     font-family: var(--FontPrincial);
     color: var(--CorPrincipal);
-    font-size: 50px;
+    font-size: 48px;
     margin-bottom: 10px;
 }
 #home p{
@@ -168,4 +168,62 @@ span{
 }
 #servicos .card .text p{
     font-family: var(--FontSecundaria);
+}
+.text-animado{
+    color: var(--CorPrincipal);
+}
+
+.text-animado{
+    position: relative;
+}
+
+.text-animado::before{
+    content: "";
+    animation: palavras 20s infinite;
+}
+
+.text-animado::after{
+    content: "";
+    position: absolute;
+    height: 17px;
+    border-left: 2px solid var(--CorPrincipal);
+    right: -5px;
+    opacity: 1;
+    animation: cursor .8s infinite;
+    animation: digita 20s steps(50) infinite;
+    width: calc(100% + 10px);
+    background-color: var(--Background);
+}
+
+@keyframes digita{
+    10%, 15%, 30%, 35%, 45%, 50%, 65%, 70%, 75%, 90%, 95%{
+        width: 0;
+    }
+    5%,20%,25%,40%,45%,60%,65%, 80%, 85%{
+        width: calc(100% + 10px);
+    }
+}
+
+@keyframes cursor{
+    0%{
+        border-left: 2px solid var(--Background);
+    }
+}
+
+@keyframes palavras {
+    0%,20%{
+        content: "Seja digital com";
+    }
+    22%,40%{
+        content: "Transforme-se com";
+    }
+    41%,60%{
+        content: "Seja digital com";
+    }
+    61%,80%{
+        content: "Transforme-se com";
+    }
+    81%,100%{
+        content: "Seja digital com";
+    }
 }
