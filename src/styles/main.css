@@ -20,6 +20,7 @@
 }
 
 body{
+    overflow-x: hidden;
     background-color: var(--Background);
 }
 header{
@@ -29,7 +30,7 @@ header .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1000px;
+    max-width: 1100px;
     width: 100%;
     margin: 0 auto;
     font-family: var(--FontSecundaria);
@@ -65,13 +66,57 @@ header nav ul li a:hover::after{
     width: 100%;
 }
 #home{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
     margin: 0 auto;
+    padding-top: 50px;
 }
 #home .container{
-    max-width: 1000px;
+    max-width: 1100px;
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
     margin: 0 auto;
+}
+#home h1{
+    font-family: var(--FontPrincial);
+    color: var(--CorPrincipal);
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+#home p{
+    font-family: var(--FontSecundaria);
+    color: var(--CorPrincipal);
+    font-size: 16px;
+    width: 450px;
+    margin-bottom: 10px;
+}
+#home .container-esq{
+    width: 720px;
+    margin-top: 100px;
+}
+#home button{
+    width: 180px;
+    height: 40px;
+    border: none;
+    border-radius: 15px;
+    background-color: var(--CorSecundaria);
+    color: white;
+    cursor: pointer;
+    font-family: var(--FontSecundaria);
+    transition: 0.4s ease-in-out;
+}
+#home button:hover{
+    box-shadow: 0 10px 15px -3px #ef59235d, 0 4px 6px -2px #ef592346;
+}
+span{
+    color: var(--CorSecundaria);
+}
+.simbolo-back{
+    z-index: -1;
+    position: absolute;
+    left: 63%;
+    top: -20%;
 }
