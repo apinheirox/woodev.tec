@@ -52,6 +52,7 @@ header nav ul li a{
     color: var(--CorPrincipal);
     padding: 0px 10px 10px 0px;
     position: relative;
+    font-size: 15px;
 }
 header nav ul li a::after{
     content: " ";
@@ -122,7 +123,8 @@ span{
     z-index: -1;
     position: absolute;
     left: 63%;
-    top: -20%;
+    top: -18%;
+    animation: girar 25s linear infinite;
 }
 
 /*ANIMAÇÕES HOME*/
@@ -150,6 +152,14 @@ span{
     animation: digita 20s steps(50) infinite;
     width: calc(100% + 10px);
     background-color: var(--Background);
+}
+@keyframes girar {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 @keyframes digita{
@@ -198,12 +208,12 @@ span{
 }
 #servicos h2{
     font-family: var(--FontSecundaria);
-    font-size: 20px;
+    font-size: 16px;
     margin-bottom: 15px;
 }
 #servicos h1{
     font-family: var(--FontPrincial);
-    font-size: 45px;
+    font-size: 44px;
     width: 650px;
     margin-bottom: 15px;
 }
@@ -222,8 +232,11 @@ span{
     border-radius: 7px;
     box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.082);
     border: 1px solid rgba(128, 128, 128, 0.171);
+    transition: .3s ease-in-out;
 }
-
+#servicos .card:hover{
+    transform: translateY(-4px);
+}
 #servicos .card .text{
     text-align: left;
     padding: 0px 30px 0px 30px;
