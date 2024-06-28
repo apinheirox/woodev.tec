@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --Background: #FFFFF0;
+    --CorPrincipal: #000000;
+    --CorSecundaria: #EF5A23;
+    --FontPrincial: 'Two Weekends Sans';
+    --FontSecundaria: 'Aron';
+}
+@font-face {
+    font-family: 'Two Weekends Sans';
+    src: url('../../fonts/twoweekendssans-regular.woff') format('woff');
+}
+@font-face {
+    font-family: 'Aron';
+    src: url('../../fonts/Aron-ExtraBold-BF6556dd3e2d89f.woff') format('woff');
+}
+
+body{
+    background-color: var(--Background);
+}
+header{
+    margin: 10px auto;
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    font-family: var(--FontSecundaria);
+}
+header img{
+    width: 150px;
+}
+header nav ul{
+    display: flex;
+    gap: 20px;
+}
+header nav ul li{
+    list-style: none;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: var(--CorPrincipal);
+    padding: 0px 10px 10px 0px;
+    position: relative;
+}
+header nav ul li a::after{
+    content: " ";
+    width: 0;
+    height: 3px;
+    background-color: var(--CorSecundaria);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+
+header nav ul li a:hover::after{
+    width: 100%;
+}
+#home{
+    margin: 0 auto;
+}
+#home .container{
+    max-width: 1000px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+}
