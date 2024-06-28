@@ -23,7 +23,9 @@ body{
     overflow-x: hidden;
     background-color: var(--Background);
 }
-
+html{
+    scroll-behavior: smooth;
+}
 /*HEADER*/
 header{
     margin: 10px auto;
