@@ -23,6 +23,8 @@ body{
     overflow-x: hidden;
     background-color: var(--Background);
 }
+
+/*HEADER*/
 header{
     margin: 10px auto;
 }
@@ -65,6 +67,8 @@ header nav ul li a::after{
 header nav ul li a:hover::after{
     width: 100%;
 }
+
+/*HOME*/
 #home{
     display: flex;
     justify-content: center;
@@ -91,7 +95,7 @@ header nav ul li a:hover::after{
     color: var(--CorPrincipal);
     font-size: 16px;
     width: 450px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 #home .container-esq{
     width: 720px;
@@ -106,7 +110,7 @@ header nav ul li a:hover::after{
     color: white;
     cursor: pointer;
     font-family: var(--FontSecundaria);
-    transition: 0.5s ease-in-out;
+    transition: 0.4s ease-in-out;
 }
 #home button:hover{
     box-shadow: 0 10px 15px -3px #ef59235d, 0 4px 6px -2px #ef592346;
@@ -120,55 +124,8 @@ span{
     left: 63%;
     top: -20%;
 }
-#servicos{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    height: 100%;
-    margin: 0 auto;
-    padding-top: 200px;
-}
-#servicos h2{
-    font-family: var(--FontSecundaria);
-    font-size: 20px;
-    margin-bottom: 15px;
-}
-#servicos h1{
-    font-family: var(--FontPrincial);
-    font-size: 45px;
-    width: 650px;
-    margin-bottom: 15px;
-}
-#servicos .container{
-    max-width: 1100px;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin: 50px auto;
-    gap: 25px;
-}
-#servicos .card{
-    background-color: white;
-    width: 330px;
-    height: 300px;
-    border-radius: 7px;
-    box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.082);
-    border: 1px solid rgba(128, 128, 128, 0.171);
-}
 
-#servicos .card .text{
-    text-align: left;
-    padding: 0px 30px 0px 30px;
-}
-#servicos .card .text h3{
-    font-family: var(--FontPrincial);
-    margin-bottom: 12px;
-}
-#servicos .card .text p{
-    font-family: var(--FontSecundaria);
-}
+/*ANIMAÇÕES HOME*/
 .text-animado{
     color: var(--CorPrincipal);
 }
@@ -226,4 +183,55 @@ span{
     81%,100%{
         content: "Seja digital com";
     }
+}
+
+/*SERVIÇOS*/
+#servicos{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 200px;
+}
+#servicos h2{
+    font-family: var(--FontSecundaria);
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+#servicos h1{
+    font-family: var(--FontPrincial);
+    font-size: 45px;
+    width: 650px;
+    margin-bottom: 15px;
+}
+#servicos .container{
+    max-width: 1100px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 50px auto;
+    gap: 25px;
+}
+#servicos .card{
+    background-color: white;
+    width: 330px;
+    height: 300px;
+    border-radius: 7px;
+    box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.082);
+    border: 1px solid rgba(128, 128, 128, 0.171);
+}
+
+#servicos .card .text{
+    text-align: left;
+    padding: 0px 30px 0px 30px;
+}
+#servicos .card .text h3{
+    font-family: var(--FontPrincial);
+    margin-bottom: 12px;
+}
+#servicos .card .text p{
+    font-family: var(--FontSecundaria);
 }
